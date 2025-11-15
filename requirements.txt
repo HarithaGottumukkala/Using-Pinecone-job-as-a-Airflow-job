@@ -1,0 +1,24 @@
+# -------------------------------
+# Airflow + Pinecone Assignment 8
+# Requirements File
+# -------------------------------
+
+# Core workflow orchestrator
+apache-airflow==2.9.1
+
+# Data handling & preprocessing
+pandas>=2.0.0
+numpy>=1.25.0
+requests>=2.31.0
+
+# Embedding model - converts text to vectors
+sentence-transformers>=2.7.0
+
+# Pinecone client SDK - to create index & upload vectors
+pinecone-client>=3.0.0
+
+# Optional: useful utilities if included in the DAG code
+tqdm>=4.66.0           # for progress bars during embedding
+python-dotenv>=1.0.0   # for reading .env files if used
+
+
